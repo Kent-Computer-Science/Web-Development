@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topNav">
+<a href="#">Home</a>
+<a href="#">Calculator</a>
+<a href="#">About Me</a>
+
+</div>
+
+<button type="button"
+onclick="change()"
+>Change Style</button>
+
+<button type="button"
+onclick="change2()"
+>Change Style</button>
+
+
+<h1>Calculator</h1>
+<div id="calculator" class="container">
+<div class="row">
+<div id="screen">0</div>
+</div>
+
+<div class="row">
+<div> 1</div>
+<div> 2</div>
+<div> 3</div>
+</div>
+<div class="row">
+<div> 4</div>
+<div> 5</div>
+<div> 6</div>
+</div><div class="row">
+<div> 7</div>
+<div> 8</div>
+<div> 9</div>
+</div>
+<p>Made by "Your Name"</p>
+</div>
+
+<script>
+
+const element = document.getElementById("calculator"); 
+function change() {
+  
+  element.classList.remove("container");
+  element.classList.add("container2"); 
+}
+
+function change2(){
+  element.classList.toggle("dark-mode")
+}
+</script>
+
+</body>
+
+</html>

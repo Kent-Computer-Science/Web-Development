@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>Javascript</h1>
+<p>Computer Science is challenging.</p>
+<ul>
+    <li>Bagel</li>
+    <li>Eggs</li>
+    <li>Tea</li>
+</ul>
+<a href="calculator.html">Calculator</a>
+<div id="BoxA"></div>
+<p id="wordBox"></p>
+<button type="button"
+onclick="function1()"
+>Button 1</button>
+<button type="button"
+onclick="function2()">
+    Button 2
+</button>
+
+<script>
+var name = "Teacher";
+
+function function1(){
+    alert("Hello " + name);
+}
+
+function function2(){
+    document.getElementById("wordBox").innerHTML = name;
+}
+
+
+
+</script>
+
+
+</body>
+
+
+</html>
